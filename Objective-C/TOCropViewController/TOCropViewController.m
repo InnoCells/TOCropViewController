@@ -1047,6 +1047,9 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     self.toolbar.cancelButtonColor = color;
 }
 
+- (void)setShowOnlyIcons:(BOOL)showOnlyIcons {
+    self.toolbar.showOnlyIcons = showOnlyIcons;
+}
 
 - (TOCropView *)cropView {
     // Lazily create the crop view in case we try and access it before presentation, but

@@ -187,6 +187,13 @@
 @property (nullable, nonatomic, copy) UIColor *cancelButtonColor;
 
 /**
+ If true, button icons are visible in portairt instead button text.
+
+ Default is NO.
+ */
+@property (nonatomic, assign) BOOL showOnlyIcons;
+
+/**
  Shows a confirmation dialog when the user hits 'Cancel' and there are pending changes.
  (Default is NO)
  */
